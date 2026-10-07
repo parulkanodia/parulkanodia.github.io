@@ -270,6 +270,20 @@
   footer a { color: var(--ink); }
   .barcode { margin-top: 40px; font-family: monospace; font-size: 10px; letter-spacing: 1px; opacity: 0.5; }
 
+  /* ---- award strip ---- */
+  .award { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .award-inner {
+    border-top: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink);
+    padding: 22px 0; display: flex; align-items: center; justify-content: center;
+    gap: 18px; text-align: center; flex-wrap: wrap;
+  }
+  .award .star {
+    font-family: 'Archivo Black', sans-serif; color: var(--accent-orange);
+    font-size: 20px; line-height: 1;
+  }
+  .award p { font-size: 13px; line-height: 1.5; letter-spacing: 0.02em; }
+  .award b { font-family: 'Archivo Black', sans-serif; text-transform: lowercase; font-weight: normal; }
+
   @media (max-width: 820px) {
     .cards, .bowls, .formats { grid-template-columns: 1fr 1fr; }
   }
@@ -296,7 +310,7 @@
   <header class="hero wrap" id="top">
     <div class="kicker">small-batch bowls / weekly drops / bangalore</div>
     <img class="logo" src="logo.png" alt="gotchu">
-    <p class="sub">salads that look like drops, taste like craft, arrive like culture. made fresh, in small batches, gone by evening.</p>
+    <p class="sub">bowls that look like drops, taste like craft, arrive like culture. made fresh, in small batches, gone by evening.</p>
 
     <div class="cta-row">
       <a class="btn btn-wa" href="https://chat.whatsapp.com/Byu4KL8qa2iCiptEkvXmyX?mode=gi_t" target="_blank" rel="noopener">
@@ -356,11 +370,11 @@
       </div>
 
       <div class="bowl">
-        <div class="photo"><img src="bowl-2.jpg" alt="bean there done that" loading="lazy"></div>
+        <div class="photo"><img src="bowl-2.jpg" alt="handroll hour" loading="lazy"></div>
         <div class="meta">
-          <div class="drop-tag">drop 02</div>
-          <h3>bean there. done that.</h3>
-          <p>three beans. fresh herbs. sharp dressing. crunch where it counts.</p>
+          <div class="drop-tag">drop 22</div>
+          <h3>handroll hour</h3>
+          <p>miso-glazed tofu. sushi rice. avocado. cucumber. kimchi. pickled ginger. sriracha mayo. torn nori, scoop and wrap.</p>
         </div>
       </div>
 
@@ -452,7 +466,7 @@
     </div>
     <div class="party-strip">
       <img src="party-1.jpg" alt="party bowl feast platter" loading="lazy">
-      <img src="party-2.jpg" alt="large kale and chickpea salad" loading="lazy">
+      <img src="party-2.jpg" alt="large kale and chickpea bowl" loading="lazy">
       <img src="party-3.jpg" alt="chopped party bowl" loading="lazy">
       <img src="party-4.jpg" alt="party tray with pita and dips" loading="lazy">
     </div>
@@ -596,6 +610,13 @@
           let's do it
         </a>
       </div>
+    </div>
+  </section>
+
+  <section class="award">
+    <div class="award-inner">
+      <span class="star">&#9733;</span>
+      <p><b>culinary champion</b> at namu recommends vegan market, 2026. picked by chef rahul sharma of nila.</p>
     </div>
   </section>
 
