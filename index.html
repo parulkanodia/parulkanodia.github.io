@@ -166,6 +166,36 @@
   }
   .bowl p { font-size: 13px; line-height: 1.5; }
 
+  /* ---- drops archive strip ---- */
+  .archive-strip { margin-top: 40px; border-top: 1.5px solid var(--ink); padding-top: 28px; }
+  .archive-strip .archive-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 10px; margin-bottom: 18px;
+  }
+  .archive-strip h3 {
+    font-family: 'Archivo Black', sans-serif; text-transform: lowercase;
+    font-size: 20px; line-height: 1;
+  }
+  .archive-strip .count { font-size: 13px; color: var(--accent-orange); }
+  .archive-list {
+    list-style: none; columns: 3; column-gap: 32px;
+  }
+  .archive-list li {
+    padding: 7px 0; font-size: 13px; line-height: 1.4;
+    break-inside: avoid; border-bottom: 1px solid var(--line);
+  }
+  .archive-list .dn {
+    font-family: 'Archivo Black', sans-serif; color: var(--accent-orange);
+    margin-right: 8px;
+  }
+  .archive-list .tag {
+    font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(0,0,0,0.4); margin-left: 6px;
+  }
+  .archive-list .tbd { opacity: 0.4; }
+  @media (max-width: 760px) { .archive-list { columns: 2; } }
+  @media (max-width: 440px) { .archive-list { columns: 1; } }
+
   .formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .format {
     border: 1.5px solid var(--ink); border-radius: 18px;
@@ -492,6 +522,42 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="archive-strip">
+      <div class="archive-head">
+        <h3>the full archive</h3>
+        <span class="count">27 drops and counting</span>
+      </div>
+      <ul class="archive-list">
+        <li><span class="dn">01</span>the core bowl</li>
+        <li><span class="dn">02</span>bean there. done that.</li>
+        <li><span class="dn">03</span>beirut bazaar</li>
+        <li><span class="dn">04</span>sprout situation</li>
+        <li><span class="dn">05</span>moroccan sun bowl</li>
+        <li><span class="dn">06</span>sri lankan buddha bowl</li>
+        <li><span class="dn">07</span>sunday breakfast set</li>
+        <li><span class="dn">08</span>mediterranean protein bowl</li>
+        <li><span class="dn">09</span>slurp culture</li>
+        <li><span class="dn">10</span>mezze mood</li>
+        <li><span class="dn">11</span>mango tuk tuk</li>
+        <li><span class="dn">12</span>bean there. done that.<span class="tag">repress</span></li>
+        <li><span class="dn">13</span>riviera</li>
+        <li><span class="dn">14</span>seoul food</li>
+        <li><span class="dn">15</span>tiffin era</li>
+        <li><span class="dn">16</span>the sprout situation</li>
+        <li><span class="dn">17</span>sugar &amp; spice</li>
+        <li><span class="dn">18</span>mezze mood<span class="tag">repress</span></li>
+        <li><span class="dn">19</span>hot head</li>
+        <li><span class="dn">20</span>confit culture<span class="tag">x ela bakehouse</span></li>
+        <li><span class="dn">21</span>khowsuey club<span class="tag">x az kitchen</span></li>
+        <li><span class="dn">22</span>handroll hour</li>
+        <li><span class="dn">23</span>saigon hour</li>
+        <li><span class="dn">24</span>burrito, but</li>
+        <li><span class="dn">25</span>pantry raid</li>
+        <li><span class="dn">26</span>bean there. done that.<span class="tag">repress</span></li>
+        <li><span class="dn">27</span>dumpling hour</li>
+      </ul>
     </div>
   </section>
 
